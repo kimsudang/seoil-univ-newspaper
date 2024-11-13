@@ -1,0 +1,553 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font: "arial";
+}
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul {
+	list-style:none;
+}
+
+header {
+	width:100%;
+}
+
+div.inner{
+	width: 100%;
+	min-width: 1200px;
+	height: 200px;
+	margin: 0px;
+	position: relative;
+	margin-bottom: 55px;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+a.gnb_item {
+	text-decoration:none;
+	color:black;
+}
+
+div.titlebar{
+	width: 100%;
+	height: 155px;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-bottom: 0.2rem solid #ddd;
+}
+
+div.active-title{
+	display: none;
+}
+
+/*login*/
+ul.util {
+	position: absolute;
+	top: 10%;
+	right: 10%;
+}
+
+ul.util li{
+	float: left;
+}
+
+ul.util li a{
+	display: block;
+	font: 13px/1 "arial";
+	color: #999;
+	padding: 0px 10px;
+}
+ 
+ul.util li p{
+	display: block;
+	font: 13px/1 "arial";
+	color: #999;
+	padding: 0px 10px;
+}
+
+.gnb-menu{
+	width: 80%;
+}
+
+.search-menu{
+	width: 20%;
+}
+
+.toggle-memu{
+	display: none;
+}
+
+#gnb{
+	position: absolute;
+	height: 50px;
+	width: 80%;
+	bottom: 0px;
+	left: 0px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+#gnb li{
+	float: left;
+}
+
+#gnb li a{
+	display: block;
+	width: auto;
+	height: 100%;
+	font: bold 15px/1 "arial";
+	color: #555;
+	vertical-align: middle;
+    margin: 0 auto;
+}
+
+#gnb li a::after {
+  width: 0;
+  height: 1vw;
+  background: #5d8cef;
+  left: 50%;
+}
+
+.gnb_btn{
+	display: none !important;
+}
+
+#mainMenu {
+	height: 50px;  
+	width: 100%;
+	/* [변경] 하위 메뉴와 동일하게 맞춤 */
+	position: relative;
+	background-color: transparent; 
+	/* [추가] 늘어난만큼 배경색도 보이도록 수정 */
+	margin: 0;
+	border-bottom: 0.2rem solid #ddd;
+	display: flex;
+	flex-direction: row;
+}
+
+
+#mainMenu ul { 
+/* 메인 메뉴 안의 ul을 설정함: 상위메뉴의 ul+하위 메뉴의 ul */
+	list-style-type: none;  
+	margin: 0px;            
+	padding: 0px;           
+}
+
+#mainMenu ul li {            
+/* 메인 메뉴 안에 ul 태그 안에 있는 li 태그의 스타일 적용(상위/하위메뉴 모두) */
+	color: white;
+	width: 14.28%;
+	height: 50px;     
+	float: left;                
+	line-height: 50px; 
+	padding: 16px;
+	vertical-align: middle;     
+	text-align: center;          
+}
+
+.menuLi {           
+/* 상위 메뉴와 하위 메뉴의 a 태그에 공통으로 설정할 스타일 */
+	text-decoration:none;
+	width: 135px;
+	height: 35px;
+	margin-top: 8px;
+}
+
+.subMenuLi {
+	text-decoration:none; 
+	display: block;
+	width: 136px;
+	font-size: 11px; 
+	font-weight: bold;
+	font-family: "Trebuchet MS", Dotum; 
+	color: #2d2d2d;              
+	-border: solid 1px black;    
+	-margin-right: -1px;         
+}
+
+
+.longLi {
+/* 좀 더 긴 메뉴 스타일 설정 */
+	 width: 200px;
+	 height: 50px;
+}
+
+.subMenu { 
+/* 하위 메뉴 스타일 설정 */
+position: absolute;
+height: 0px; 
+margin-top: 16px !important;
+overflow: hidden;
+transition: height .4s; 
+-webkit-transition: height .4s; 
+-moz-transition: height .4s; 
+-o-transition: height .4s; 
+width: 100%; 
+left: 0;
+/* [추가] 하위 메뉴 전체에 배경색 설정 */
+}
+
+.subMenu li {
+	display: inline-block;
+}
+
+.mainMenuLi:hover{
+	border-bottom: 2px solid #0080ff;
+}
+
+.mainMenuLi:hover .subMenu { 
+	height: 50px;
+}
+
+.subMenu>li:hover {     
+	border-bottom: 2px solid #0080ff;
+}
+
+form.d-flex{
+	display: block !important;
+	width: 20%;
+	height: 35px;
+	position: absolute;
+	bottom: 6px;
+	
+}
+
+::placeholder{
+	font-size: 1.2rem;
+}
+
+input.form-control{
+	z-index: 5;
+	border: 1px solid #ddd;
+	font-size: 10px;
+}
+
+button.search-button{
+	position: absolute;
+	border: none;
+	background: none;
+	font-size: 1.5rem;
+	margin-right: 10px;
+	top: 4px;
+	right: 10px;
+	z-index: 100;	
+}
+
+i.fa-solid{
+	margin: 6px 0px;
+	color: #808080;
+}
+
+img.logo  {
+	width : 300px;
+	height: 130px;
+}
+
+.input-group{
+	height: 100%;
+	font-size: 12px;
+	padding-right: 10px;
+}
+
+.input-group>input{
+	padding-left: 15px;
+	font-size: 14px;
+}
+
+.active-title{
+	display: none;
+}
+
+
+@media screen and (max-width:1023px) {
+/* 타블렛 */
+	div.inner {
+	    min-width: 770px;
+	    height: 100px;
+	    padding: 0px;
+	    margin-bottom: 60px;
+	    background: #b1ccf3;
+	    z-index: 3;
+	    position: sticky;
+	    top: 0px;
+	    left: 0px;
+	}
+	
+	div.titlebar {
+	    width: 25%;
+	    height: 100px;
+	    padding: 0px;
+	    margin-left: 20px;
+	   	border: 0px;
+	}
+	
+	img.logo {
+	    width: 185px;
+	    height: 100%;
+	}
+	
+	.none{
+		display: none !important;
+	}
+	
+	ul.util {
+		top: 5%;
+	    right: 3%;
+	}
+	
+	ul.util li {
+		margin-top: 30px;
+	}
+	
+	.util>li>p{
+		padding-top: 5px !important;
+		font-size: 20px !important;
+    	font-weight: bold !important;
+	} 
+	
+	.util>li>a{
+		font-size: 30px !important;
+		font-weight: bold !important;
+		margin: 0px 5px
+	}
+		
+	.gnb_btn{
+	    color: #808080;
+	    display: inline-block !important;
+	}
+	
+	.fa-power-off, .fa-user, .fa-user-plus, .fa-bars{
+		margin: 0px !important;
+	}
+	
+	nav{
+		width: 100%;
+		min-width: 770px;
+		display: flex;
+		flex-direction: column;
+		background-color:transparent;
+	}
+	
+	.flex-inner{
+		width: 100%;
+		min-width: 770px;
+	}
+	
+	#mainMenu{
+		display: none;
+	    width: 100%;
+	    min-width: 770px;
+		background-color: #808080;
+	    margin: 0;
+	    z-index: 300;
+	    border: 0px;
+	    height: 58% !important;
+	    position: absolute;
+	}
+	
+	.gnb-menu {
+	    width: 100%;
+	    height: 100%;
+	    margin-top: 50px;
+	    min-width: 770px;
+	}
+
+	#gnb{
+		width: 100%;
+		min-width: 770px;
+		height: 750% !important;
+	    padding: 0px !important;
+	    overflow: hidden;
+	    list-style: none;
+	    position: relative;
+	    text-align: center;
+	    background-color: #808080;
+	}
+	
+	.gnb{
+		width: 100%;
+	  	padding: 0px !important;
+	  	overflow: hidden;
+	  	display: flex;
+	  	flex-direction: column;
+		background-color:transparent;
+	}
+	
+	#mainMenu ul {
+	    list-style-type: none;
+	   	padding: 0px;
+	    margin-top: 0px !important;
+	}
+	
+	#mainMenu ul li{
+	    text-align: center;
+	   	line-height: 50px !important;
+	    width: 100%;
+	    background-color: #808080;
+	    padding-top: 10px;
+	    padding-bottom: 10px;
+	    list-style: none;
+	}
+	
+	.subMenu>li{
+		width: 25% !important;
+	}
+	
+	.gnb li a {
+	    width: 100%;
+		height: 50px;
+		display: block;
+		padding: 0 20px;
+		font-size: 22px;
+		color: black;
+		font-weight: bold;
+	    text-align: center;
+	    line-height: 55px;
+	    text-decoration: none;
+	}
+	
+	.subMenu{
+		height: 0px;
+	 	overflow: hidden;
+	 	display: flex;
+	  	flex-direction: row;
+    	justify-content: space-evenly;
+	}
+	
+	.gnb > li{
+		width: 100%;
+	  	text-align: center;
+	  	line-height: 40px;
+	  	background-color: #808080;
+	}
+	
+	.subMenu > li{
+		line-height: 50px !important;
+	}
+	
+	.gnb > li:hover {
+		border: 0px;
+  		transition-duration: 0.5s;
+	}
+	
+	.gnb > li:hover .subMenu { 
+		height: 250px;
+		border: 0px;
+		transition-duration: 1s;
+		margin-top: 0px;
+	}
+	
+	form.d-flex {
+	    display: block !important;
+	    width: 100%;
+	    height: 50px;
+	    position: absolute;
+	    top: 30px;
+	    background-color: #808080;
+    	padding: 5px 0px;
+	}
+	
+	::placeholder{
+		font-size: 18px;
+	}
+	
+	.input-group {
+	    height: 100%;
+	    font-size: 18px;
+	    width: 90% !important;
+	    margin: 0px 5%;
+	}
+	
+	.input-group>input {
+	    padding-left: 15px;
+	    font-size: 18px;
+	    opacity: 0.8;
+	}
+	
+	#gnb li a {
+		text-align: center;
+	    display: block;
+	    width: 100%;
+	    line-height: 45px;
+	    font-size: 18px;
+	    color: white;
+	}
+	
+	button.search-button{
+		font-size: 2rem;
+	    margin-right: 10px;
+	    top: 6px;
+	    right: 15px;
+	}
+	
+}
+
+
+@media screen and (max-width:767px) {
+/* 모바일 */
+	div.inner {
+    	min-width: 546px;
+    }
+    
+    #mainMenu {
+	    display: none;
+	    width: 100%;
+	    min-width: 546px;
+	    background-color: #808080;
+	    margin: 0;
+	    z-index: 300;
+	    border: 0px;
+	    height: 400px;
+	    position: absolute;
+    }
+    
+    .flex-inner{
+		width: 100%;
+		min-width: 546px;
+	}
+	
+	.gnb-menu{
+		min-width: 546px;
+	}
+	
+	#gnb{
+		min-width: 546px;
+	}
+	
+	.subMenu li a{
+		font-size: 15px !important;
+	}
+    
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+encoding//src/main/java/kr/seoil/controller/AdvertiseUpdateController.java=UTF-8
+encoding//src/main/java/kr/seoil/controller/BoardUpdateController.java=UTF-8
+encoding//src/main/java/kr/seoil/controller/BoardUploadController.java=UTF-8
+encoding//src/main/java/kr/seoil/controller/ImgUploadController.java=UTF-8
+encoding//src/main/java/kr/seoil/dao/BoardDAO.java=UTF-8
+encoding//src/main/java/kr/seoil/dao/TempDAO.java=UTF-8
+encoding//src/main/java/kr/seoil/dao/UserDAO.java=UTF-8
+encoding//src/main/java/kr/seoil/util/JdbcUtil.java=UTF-8
+encoding//src/main/java/kr/seoil/vo/BoardVO.java=UTF-8
+encoding/<project>=UTF-8

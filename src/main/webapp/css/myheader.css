@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font: "arial";
+}
+
+/*header*/
+html {
+	font-size: 62.5%;
+}
+
+.head {
+	width: 100%;
+	height: 100px;
+	background: #b1ccf3;
+	position: sticky;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	
+}
+
+.titlebar {
+	display: inline-block;
+	position: absolute;
+	padding-top: 10px;
+	padding-left: 30px;
+}
+
+img.logo {
+	width : 156px;
+	height: 80px;
+}
+
+.head.d-flex {
+	display: inline-block;
+	width: 80px;
+	border-radius: 3px;
+	right: 5px;
+}
+
+.icon{
+	display: none;
+}
+
+#write-btn {
+	width: 90px;
+	height: 50px;
+	background: #c2e3f3;
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	right:150px;
+	top: 25px;
+	display: inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+#write-btn:hover {
+	background: #8080ff;
+	color: white;
+}
+
+#signout-btn {
+	width: 90px;
+	height: 50px;
+	background: #c2e3f3;
+	color: black;
+	font-size: 15px;
+	position: absolute;
+	right: 40px;
+	top: 25px;
+	display: inline-block;
+	border-radius: 10px;
+	font-weight: bold;
+}
+
+#signout-btn:hover {
+	background: #8080ff;
+	color: white;
+}
+
+.header-nav{
+	display: none;
+}
+
+/*nav*/
+nav{
+	width: 18%;
+	height: 100%;
+	min-width: 50px;
+	position: fixed;
+	background: #808080;
+	z-index: 800;
+}
+
+nav>ul {
+	padding-left: 0px !important;
+	list-style: none;
+	position: relative;
+	text-align: center;
+	
+}
+
+.menu {
+  overflow: hidden;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submenu > li {
+  line-height: 30px;
+}
+
+.submenu {
+	height: 0px; /*ul의 높이를 안보이게 처리*/
+	padding: 0px !important;
+	overflow: hidden;
+}
+
+.menu > li:hover {
+	transition-duration: 0.5s;
+	background-color: #b1ccf3;
+}
+
+.menu > a:hover {
+	background-color: #b1ccf3;
+}
+
+
+.menu > li:hover .submenu {
+	width: 100%;
+	height: 230px; /*서브메뉴 li한개의 높이 30*5*/
+	transition-duration: 1s;
+}
+
+.menu li {
+	padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    flex-direction: column;
+}
+
+.dropdown{
+	width: 100%;
+} 
+
+
+.menu li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 0 20px;
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+}
+
+.menu>ul{
+	display: none;
+	position: absolute;
+	margin-left: 5px;
+}
+
+.menu li button {
+	color: white;
+}
+
+.myShow{
+	width: 100% !important;
+}
+
+.dropdown-menu>li {
+	text-align: center;
+	background: white;
+	width: 100%;
+	height: 80px;
+}
+
+.menu button{
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+@media screen and (max-width:1023px) {
+/* 타블렛 */
+	.head {
+		min-width: 800px;
+	}
+	
+	.icon{
+		border: 0px;
+		background-color:transparent;
+		font-size: 30px;
+		margin-right: 25px;
+		margin-top: 30px;
+		display: inline-block;
+		float: right;
+	}
+	
+	#signout-btn {
+		display: none;
+	}
+	
+	#write-btn {
+		display: none;
+	}
+	
+	#menu-nav{
+		display: none;
+	}
+	
+	nav{
+		width: 100%;
+		min-width: 800px;
+		display: flex;
+		flex-direction: column;
+		background-color:transparent;
+	}
+	
+	.menu {
+	 	width: 100%;
+	  	padding: 0px !important;
+	  	overflow: hidden;
+	  	display: flex;
+	  	flex-direction: column;
+		background-color:transparent;
+	}
+	
+	.menu > li {
+	  	width: 100%;
+	  	text-align: center;
+	  	line-height: 40px;
+	  	background-color: #808080;
+	}
+	
+	.menu li a{
+		width: 100%;
+		height: 50px;
+		display: block;
+		padding: 0 20px;
+		font-size: 22px;
+		color: black;
+		font-weight: bold;
+	    text-align: center;
+	    line-height: 55px;
+	    text-decoration: none;
+	}
+		
+	.submenu > li {
+	  line-height: 50px;
+	  background-color: #94a9ff;
+	}
+	
+	.submenu {
+	  height: 0px;
+	  overflow: hidden;
+	}
+	
+	.menu > li:hover {
+	  background-color: #94a9ff;
+	  transition-duration: 0.5s;
+	}
+	
+	.menu > li:hover .submenu {
+	  height: 230px;
+	  transition-duration: 1s;
+	}
+}
+	
+@media screen and (max-width:767px) {
+/* 모바일 */
+	.head {
+		min-width: 540px;
+	}
+	
+	nav{
+		width: 100%;
+		min-width: 540px;
+		display: flex;
+		flex-direction: column;
+		background-color:transparent;
+	}
+}

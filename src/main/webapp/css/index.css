@@ -1,0 +1,2245 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font: "arial";
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+html {
+	height: 100%;
+	font-size: 62.5%;
+}
+
+body{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.user-wrap {
+    position: relative;
+	min-width: 1200px;
+    margin: 0 auto;
+	padding-left: 10%;
+    padding-right: 10%;
+	width: 100%;
+}
+
+.wrap{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul {
+	list-style:none;
+}
+
+div.inner-content{
+	width:100%;
+	margin-bottom: 5% !important;
+	margin: 0px auto;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+
+div.wrap-news{
+	width: 75%;
+	min-width: 65%;
+	display: inline-flex;
+	flex-direction: column;
+	float: left;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-weight: var(--wgt300, 300);
+    line-height: 1.8;
+    color: #000;
+    text-align: justify;
+    word-break: normal;
+    word-wrap: break-word;
+}
+
+
+div.wrap-bottom{
+	margin-top: 20px;
+}
+
+.div-inner{
+	float : left;
+	width : 48%;
+	height: 100%;
+	margin-left: 10px;
+}
+
+section{
+	width: 100%;
+}
+
+.empty-part{
+	height: 40px;
+}
+
+.main {
+	width: 100%;
+	height: 35%;
+	max-height: 800px;
+	position: relative;
+	flex-direction: row;
+	margin-bottom: 50px;
+	
+}
+
+.main .newstext-main{
+	padding: 20px 20px 0px 20px;
+    height: 30%;
+    max-height: 200px;
+    width: 100%;
+}
+
+.main .newstext-main p{
+	padding-top: 10px;
+    width: 100%;
+    display: -webkit-box;
+    max-height: 100px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.newstext-main h2 a, .newstext h4 a{
+	text-decoration: none;
+	color: black;
+}
+
+.newstext-main h2{
+	font-size: 32px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.newstext-main p a{
+	text-decoration: none;
+	color: #808080;
+	font-size: 22px;
+	width: 100%;
+}
+
+.newstext p a{
+	text-decoration: none;
+	color: #808080;
+	font-size: 18px;
+}
+
+.main .pic{
+	width: 100%;
+	height: 75%;
+	max-height: 550px;
+}
+
+.main .pic img{
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.newscategory {
+	display: inline-block;
+	flex-direction: column;
+	width: 100%;
+	height: 20%;
+}
+
+.newscategory-bottom{
+	display: inline-block;
+	flex-direction: column;
+	width: 100%;
+	height: 25%;
+	margin-bottom: 50px;
+}
+
+.sub {
+	width: 100%;
+	height: 120px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0px;
+}
+
+.sub>.pic {
+	width: 150px;
+	height: 100%;
+}
+
+
+.sub .pic img{
+	object-fit: contain;
+	width: 100%;
+	height: 120px;
+}
+
+.sub .newstext{
+	vertical-align: center;
+	margin-left: 10px;
+	padding: 0px;
+	margin-top: 5px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.sub .newstext h4{
+	font-size: 20px;
+	white-space: nowrap;
+    overflow: hidden;
+    word-break: break-all;
+    text-overflow: ellipsis;
+}
+
+.sub .newstext p{
+	margin-bottom: 0px;
+	display: -webkit-box;
+    min-height: 50px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+/*기사 내부 페이지 carousel*/
+.another-article{
+	height: 400px;
+	padding-top: 100px;
+	width: 100%;
+}
+
+.another-article>.carousel-inner{
+	height: 100%;
+	width: 100%;
+}
+
+.carousel-area{
+	width: 100%;
+	height: 100%;
+	display: flex;
+    justify-content: space-evenly;
+}
+
+.carousel-area>a{
+	width: 30%;
+	height: 100%;
+}
+
+.story-img{
+	min-width: 200px;
+	height: 100%;
+}
+
+
+/*광고*/
+.carousel-inner{
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel-item{
+	height: 100% !important;
+}
+
+.carousel-item>a>img{
+	width: 100%;
+	height: 450px;
+	object-fit: contain;
+}
+
+/*만평 이미지*/
+.satirical-img{
+	object-fit: contain;
+	width: 100%;
+	height: 450px;
+	border: 2px solid #ddd;
+}
+
+/*페이지 처리*/
+.pagination{
+	justify-content : center; 
+	font-weight: bold;
+	position: relative;
+}
+
+.page-link{
+	width:40px;
+	height: 40px !important; 
+	color: #000040 !important; 
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center !important;
+	line-height: 40px !important;
+	border: 1px solid #c0c0c0!important;
+}
+
+/**/
+.article-content-header{
+	border-bottom: 1px solid #ddd;
+	margin-bottom : 4rem;
+}
+
+.article-information {
+    padding-left : 0;
+}
+
+
+.article-information >li {
+    display: inline-block;
+    
+}
+
+.article-information >li::after {
+    content: '|';
+    position: relative;
+    top: -2px;
+    margin: 0 0.625rem;
+    font-size: .8em;
+    color: #cacaca;
+}
+
+span.marker{
+   display: inline;
+   box-shadow: inset 0 -10px 0 #ffff00; 
+}
+
+blockquote{
+	border-left: 0.3rem solid #aeaeae;
+	padding-left : 1rem;
+	padding-top : 1rem;
+	padding-bottom : 1rem;
+	margin: 1rem 0 1rem !important;
+}
+
+.info-group{
+   margin-top : 1.5rem;
+}
+
+h4.news-subTitle {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 2rem;
+    margin: 1rem 0;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #8e8f95;
+}
+
+i.fa-solid>span{
+   font-family : 'Noto Sans KR', sans-serif;
+   font-size: 1.2rem;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.125;
+    color: #707070;
+    vertical-align: middle;
+    letter-spacing: 0.04em;
+}
+
+h3.news-title {
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 4rem;
+    margin: 1.5rem 0;
+    font-weight: 700;
+}
+
+#article-view-content-body img{
+	margin : 2rem 0 1rem;
+	max-width : 100% !important;
+}
+
+#article-view-content-body {
+	margin: 0 0 1em;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #000;
+    text-align: left;
+    word-break: normal;
+    word-wrap: break-word;
+    font-size : 1.8rem;
+}
+
+figcaption{
+   padding: 0 0.625rem;
+    margin-top: 0.75rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.625;
+    color: #777;
+}
+
+h4.news-category {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.5rem 0;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #8e8f95;
+}
+
+.no-result{
+	width: 80%;
+	font-size: 20px;	
+}
+
+
+.wrap-news-article{
+	margin-right : 2rem;
+}
+
+.wrap-section{
+	width: 100%;
+	margin: 0px;
+}
+
+/*satirical*/
+.satirical-area>h2{
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: 15px;
+	margin-bottom: 10px;
+}
+
+.satirical-area{
+	width: 100%;
+}
+
+.now-area{
+	display: flex;
+	flex-wrap: wrap;
+	height: 48%;
+	justify-content: center;
+}
+
+.merge-satirical{
+	margin: 2%;
+	border: 2px solid #ddd;
+	padding: 10px;
+	width: 45%;
+	height: 46%;
+}
+
+.each-area{
+	object-fit: contain;
+	width: 100%;
+	height: 90%;
+	border: 1px solid #ddd;
+}
+
+.satirical-area>form>input{
+	width: 100px;
+	height: 50px;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.satirical-before{
+	display: flex;
+	width: 100%;
+	height: 2%;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	flex-direction: row;
+    justify-content: space-between;
+}
+
+.satirical-before>h2{
+	font-size: 30px;
+	font-weight: bold;	
+	float: left;
+}
+
+.satirical-inner:hover{
+	border-bottom: 4px solid #c0c0c0;
+}
+
+.satirical-inner{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	margin-right: 25px;
+}
+
+.satirical-inner>a{
+	display: flex;
+	text-decoration: none !important;
+}
+
+.satirical-inner>a>p{
+	display:grid;
+	align-items:center;
+	font-size: 14px;
+	font-weight: bold;
+	padding-right: 8px;
+	margin: 0 !important;
+	color: black !important;
+}
+
+.satirical-inner>a>.plus-btn{
+	display:grid;
+	align-items:center;
+	color: black !important;
+	font-size: 35px;
+	font-weight: bold;	
+}
+
+/*boardList*/
+.list-inner-content{
+	width: 75%;
+	margin: 0px auto;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.merge-list{
+	width: 100%;
+	height: 150px;
+	border-top: 2px solid #c0c0c0;
+	align-content: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.std-list{
+	width: 100%;
+	height: 70px;
+	border-bottom: 2px solid #c0c0c0;
+	align-content: center;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.in-std-list{
+	width: 100%;
+	height: 100%;
+	line-height: 70px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.std-list-content{
+	width: 100%;
+	display: flex;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.std-list-date{
+	padding-top: 10px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+
+.std-list-date>a{
+	text-decoration: none;
+	color: black;
+}
+
+
+.list{
+	width: 100%;
+	height: 100%;
+	padding: 5px 0px;
+	display: inline-flex;
+	flex-direction: row;
+}
+
+.list-pic{
+	height: 100%;
+    width: 20%;
+    max-width: 160px;
+    min-width: 160px;
+    object-fit: scale-down;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+.list-pic>a>img{
+	width: 100%;
+	height: 100%;
+	object-fit: scale-down;
+}
+
+.list-content{
+	width: 100%;
+    padding-right: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.article-title{
+	width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.article-title>a{
+	text-decoration: none;
+	color: black;
+}
+
+.font-l{
+	font-weight: normal !important;
+}
+
+.list-preview-content{
+	font-size: 18px;
+    text-align: left;
+    display: -webkit-box;
+    min-height: 50px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    white-space: normal;
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.list-preview-content>a{
+	text-decoration: none;
+	color: black;
+	
+}
+
+.list-date{
+	padding-top: 10px;
+	font-size: 16px;
+}
+
+.list-date>a{
+	text-decoration: none;
+	color: black;
+}
+
+.only-satirical{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.each-satirical{
+	margin: 2%;
+    border: 2px solid #ddd;
+    padding: 10px;
+    width: 45%;
+    height: 430px;
+
+}
+
+/*pdf*/
+.panel-body{
+	width: 75%;
+}
+
+.pdf{
+	margin-bottom: 15px;
+}
+
+.panel-body>h2{
+	font-size: 32px !important;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-left: 20px;
+}
+
+.pdf-list{
+	border: 2px solid #ddd;
+	height: 100px;
+	padding: 25px 0px 25px 40px;
+}
+
+.pdf-list>a{
+	font-size: 28px;
+	text-decoration: none;
+	color: black;
+}
+
+.pdf-list>a>i{
+	padding-right: 15px;
+}
+
+.empty{
+	height: 20px;	
+}
+
+/* board report form*/
+.reportUl{
+	padding-left : 0px;
+}
+
+.reportTitle{
+	display : block;
+	padding-top : 1rem;
+}
+
+.reportContent{
+	width : 100%;
+	height : 18rem;
+	font-size : 2rem;
+}
+
+.reportUl>li>input{
+	font-size: 20px;
+	padding-left: 5px;
+}
+
+.reportUl>li>input ::placeholder{
+	font-size: 30px;
+}
+
+#report-btn{
+	width : 10rem;
+	height : 4rem;
+	font-size : 1.5rem;
+	background-color : #6e6e6e;
+}
+
+/*서일 소식*/
+
+.box-wrap {
+  	width: 92%;
+    height: 200px;
+    margin: 0px auto !important;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.story-box {
+	width: 100%;
+    margin: 0px !important;
+    overflow: hidden;
+}
+
+.story-item {
+    margin-left: -200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.story-item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.story-content {
+    float: left;
+    width: 33%;
+    height: 200px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.c{
+	position: relative;
+	top: 45%;
+}
+
+.prev {
+  width: 2%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: -0;
+  -webkit-transform: translate(32px, -50%);
+  -ms-transform: translate(32px, -50%);
+  -o-transform: translate(32px, -50%);
+  transform: translate(30%, -50%);
+  background-color: #aaa;
+}
+
+.next {
+  width: 2%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: -0;
+  -webkit-transform: translate(-16px, -50%);
+  -ms-transform: translate(-16px, -50%);
+  -o-transform: translate(-16px, -50%);
+  transform: translate(-30%, -50%);
+  background-color: #aaa;
+}
+
+/*footer*/
+footer{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	transform: translateY(-0%);
+	padding: 30px 20px 20px;
+	background-color: #fff;
+	border-top: 1px solid rgba(0,0,0,.1);
+	margin: 0 auto -20rem;
+	padding-bottom: 1.375rem;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.img-footer{
+	display: inline-block;
+    vertical-align: middle;
+    width: 15rem;
+    height: 8rem;
+    margin : 0 1rem 0 1rem;
+}
+
+.page-container{
+   text-align : center;
+}
+	
+.container{
+   text-align : center;
+}
+
+.p-footer{
+	display: inline-block;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.1rem;
+    vertical-align: middle;
+    margin: 1rem 0;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #8e8f95;
+}
+
+
+@media screen and (max-width:1023px) {
+/* 타블렛 */
+	.user-wrap {
+	    min-width: 770px;
+		width: 100%;
+	    position: relative;
+	    margin: 0 auto;
+		padding-left: 5%;
+	    padding-right: 5%;
+	    z-index: 0;
+	}
+	
+	.body-content{
+		width: 100%;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	ul {
+		list-style:none;
+	}
+	
+	div.inner-content{
+		width: 100%;
+	    margin-bottom: 5% !important;
+	    margin: 0px auto;
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	}
+	
+	
+	div.wrap-news{
+		width: 100%;
+	    display: inline-flex;
+	    min-width: auto;
+	    flex-direction: column;
+	    float: left;
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-weight: var(--wgt300, 300);
+	    line-height: 1.8;
+	    color: #000;
+	    text-align: justify;
+	    word-break: normal;
+	    word-wrap: break-word;
+	    border-bottom: 1px solid #ddd;
+	    margin-bottom: 30px;
+	}
+	
+	
+	div.wrap-bottom{
+		margin-top: 20px;
+	}
+	
+	.div-inner{
+		float: left;
+	    width: 100%;
+	    height: 100%;
+	    margin-bottom: 20px;
+	    margin-left: 0px;
+	}
+
+	section{
+		width: 100%;
+	}
+	
+	.empty-part{
+		height: 40px;
+	}
+	
+	.main {
+		width: 100%;
+	    height: 750px;
+	    position: relative;
+	    flex-direction: row;
+	    margin-bottom: 30px;
+	    border: 1px solid #ddd;
+	}
+	
+	.main .newstext-main{
+		padding: 20px 20px 0px 20px;
+	    height: 200px;
+	    width: 100%;
+	    text-align: justify;
+	    word-break: normal;
+	    word-wrap: break-word;
+	}
+	
+	.main .newstext-main p{
+		padding-top: 10px;
+	    width: 100%;
+	    display: -webkit-box;
+	    max-height: 100px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	.newstext-main h2 a, .newstext h4 a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.newstext-main h2{
+		font-size: 30px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.newstext-main p a{
+		text-decoration: none;
+		color: #808080;
+		font-size: 22px;
+		width: 100%;
+	}
+	
+	.newstext p a{
+		text-decoration: none;
+		color: #808080;
+		font-size: 18px;
+	}
+	
+	.main .pic{
+		width: 100%;
+		height: 550px;
+	}
+	
+	.main .pic img{
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.newscategory {
+		display: inline-block;
+		flex-direction: column;
+		width: 100%;
+		height: 20%;
+		margin-bottom: 30px;
+	}
+	
+	.newscategory-bottom{
+		display: inline-block;
+		flex-direction: column;
+		width: 100%;
+		height: 25%;
+		margin-bottom: 50px;
+	}
+	
+	.sub {
+		width: 100%;
+		height: 120px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		padding: 10px 0px;
+	}
+	
+	.sub>.pic {
+		width: 150px;
+		height: 100%;
+	}
+	
+	
+	.sub .pic img{
+		object-fit: contain;
+		width: 100%;
+		height: 120px;
+	}
+	
+	.sub .newstext{
+		vertical-align: center;
+		margin-left: 10px;
+		padding: 0px;
+		margin-top: 5px;
+	}
+	
+	.sub .newstext p{
+		margin-bottom: 0px;
+		display: -webkit-box;
+	    min-height: 50px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	/*기사 내부 페이지 carousel*/
+	.another-article{
+		height: 400px;
+		padding-top: 100px;
+		width: 100%;
+	}
+	
+	.another-article>.carousel-inner{
+		height: 100%;
+		width: 100%;
+	}
+	
+	.carousel-area{
+		width: 100%;
+		height: 100%;
+		display: flex;
+	    justify-content: space-evenly;
+	}
+	
+	.carousel-area>a{
+		width: 30%;
+		height: 100%;
+	}
+	
+	.story-img{
+		width: 100%;
+		height: 100%;
+	}
+	
+	
+	/*광고*/
+	.carousel-inner{
+		object-fit: contain;
+		width: 100%;
+		height: 300px;
+	}
+	
+	.carousel-item{
+		height: 100% !important;
+	}
+	
+	.carousel-item>a>img{
+		width: 100%;
+		height: 300px;
+		object-fit: contain;
+	}
+	
+	/*만평 이미지*/
+	.satirical-img{
+		object-fit: contain;
+	    width: 100%;
+	    height: 300px;
+	    border: 1px solid #ddd;
+	}
+	
+	/*페이지 처리*/
+	.pagination{
+		justify-content : center; 
+		font-weight: bold;
+		position: relative;
+	}
+	
+	.page-link{
+		width:40px;
+		height: 40px !important; 
+		color: #000040 !important; 
+		font-size: 11px;
+		font-weight: bold;
+		text-align: center !important;
+		line-height: 40px !important;
+		border: 1px solid #c0c0c0!important;
+	}
+	
+	/**/
+	.article-content-header{
+		border-bottom: 1px solid #ddd;
+		margin-bottom : 4rem;
+	}
+	
+	.article-information {
+	    padding-left : 0;
+	}
+	
+	
+	.article-information >li {
+	    display: inline-block;
+	    
+	}
+	
+	.article-information >li::after {
+	    content: '|';
+	    position: relative;
+	    top: -2px;
+	    margin: 0 0.625rem;
+	    font-size: .8em;
+	    color: #cacaca;
+	}
+	
+	span.marker{
+	   display: inline;
+	   box-shadow: inset 0 -10px 0 #ffff00; 
+	}
+	
+	blockquote{
+		border-left: 0.3rem solid #aeaeae;
+		padding-left : 1rem;
+		padding-top : 1rem;
+		padding-bottom : 1rem;
+		margin: 1rem 0 1rem !important;
+	}
+	
+	.info-group{
+	   margin-top : 1.5rem;
+	}
+	
+	h4.news-subTitle {
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 2rem;
+	    margin: 1rem 0;
+	    line-height: 1;
+	    letter-spacing: 0.02em;
+	    color: #8e8f95;
+	}
+	
+	i.fa-solid>span{
+	   font-family : 'Noto Sans KR', sans-serif;
+	   font-size: 1.2rem;
+	    font-weight: 300;
+	    font-style: normal;
+	    line-height: 1.125;
+	    color: #707070;
+	    vertical-align: middle;
+	    letter-spacing: 0.04em;
+	}
+	
+	h3.news-title {
+		font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 4rem;
+	    margin: 1.5rem 0;
+	    font-weight: 700;
+	}
+	
+	#article-view-content-body img{
+		margin : 2rem 0 1rem;
+		max-width : 100% !important;
+	}
+	
+	#article-view-content-body {
+		margin: 0 0 1em;
+	    font-weight: 300;
+	    line-height: 1.8;
+	    color: #000;
+	    text-align: left;
+	    word-break: normal;
+	    word-wrap: break-word;
+	    font-size : 1.8rem;
+	}
+	
+	figcaption{
+	   padding: 0 0.625rem;
+	    margin-top: 0.75rem;
+	    font-size: 1.3rem;
+	    font-weight: 400;
+	    line-height: 1.625;
+	    color: #777;
+	}
+	
+	h4.news-category {
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 1.5rem;
+	    font-weight: 500;
+	    margin: 1.5rem 0;
+	    line-height: 1;
+	    letter-spacing: 0.02em;
+	    color: #8e8f95;
+	}
+	
+	.wrap-news-article{
+		margin-right: 0px;
+	}
+	
+	
+	/*satirical*/
+	.satirical-area>h2{
+		font-size: 30px;
+		font-weight: bold;	
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	
+	.satirical-area{
+		width: 100%;
+	}
+	
+	.now-area{
+		display: flex;
+		flex-wrap: wrap;
+		height: 48%;
+		justify-content: center;
+	}
+	
+	.merge-satirical{
+		margin: 2%;
+		border: 2px solid #ddd;
+		padding: 10px;
+		width: 45%;
+		height: 46%;
+	}
+	
+	.each-area{
+		object-fit: contain;
+		width: 100%;
+		height: 90%;
+		border: 1px solid #ddd;
+	}
+	
+	.satirical-area>form>input{
+		width: 100px;
+		height: 50px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	
+	.satirical-before{
+		display: flex;
+		width: 100%;
+		height: 2%;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		flex-direction: row;
+	    justify-content: space-between;
+	}
+	
+	.satirical-before>h2{
+		font-size: 30px;
+		font-weight: bold;	
+		float: left;
+	}
+	
+	.satirical-inner:hover{
+		border-bottom: 4px solid #c0c0c0;
+	}
+	
+	.satirical-inner{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		margin-right: 25px;
+	}
+	
+	.satirical-inner>a{
+		display: flex;
+		text-decoration: none !important;
+	}
+	
+	.satirical-inner>a>p{
+		display:grid;
+		align-items:center;
+		font-size: 14px;
+		font-weight: bold;
+		padding-right: 8px;
+		margin: 0 !important;
+		color: black !important;
+	}
+	
+	.satirical-inner>a>.plus-btn{
+		display:grid;
+		align-items:center;
+		color: black !important;
+		font-size: 35px;
+		font-weight: bold;	
+	}
+	
+	/*boardList*/
+	.list-inner-content{
+		width: 100%;
+		margin: 0px auto;
+		margin-bottom: 30px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.merge-list{
+		width: 100%;
+		height: 150px;
+		border-top: 2px solid #c0c0c0;
+		align-content: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	
+	.list{
+		width: 100%;
+		height: 100%;
+		padding: 5px 0px;
+		display: inline-flex;
+		flex-direction: row;
+	}
+	
+	.list-pic{
+		height: 100%;
+	    width: 20%;
+	    max-width: 160px;
+	    min-width: 160px;
+	    object-fit: scale-down;
+	    padding-right: 10px;
+	    padding-left: 5px;
+	}
+	
+	.list-pic>a>img{
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+	}
+	
+	.list-content{
+		width: 100%;
+	    padding-right: 5px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	
+	.article-title{
+		width: 100%;
+	    font-size: 22px;
+	    font-weight: bold;
+	    padding-bottom: 5px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	
+	.article-title>a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.list-preview-content{
+		font-size: 18px;
+	    text-align: left;
+	    display: -webkit-box;
+	    min-height: 50px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	.list-preview-content>a{
+		text-decoration: none;
+		color: black;
+		
+	}
+	
+	.list-date{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	
+	.list-date>a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.only-satirical{
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    width: 100%;
+	}
+	
+	.each-satirical{
+		margin: 2%;
+	    border: 2px solid #ddd;
+	    padding: 10px;
+	    width: 45%;
+	    height: 430px;
+	}
+	
+	/*pdf*/
+	.panel-body{
+		width: 100%;
+    	margin-bottom: 30px;
+	}
+	
+	.pdf{
+		margin-bottom: 15px;
+	}
+	
+	.panel-body>h2{
+		font-size: 32px !important;
+		font-weight: bold;
+		margin-bottom: 20px;
+		padding-left: 20px;
+	}
+	
+	.pdf-list{
+		border: 2px solid #ddd;
+		height: 100px;
+		padding: 25px 0px 25px 40px;
+	}
+	
+	.pdf-list>a{
+		font-size: 28px;
+		text-decoration: none;
+		color: black;
+	}
+	
+	.pdf-list>a>i{
+		padding-right: 15px;
+	}
+	
+	.empty{
+		height: 20px;	
+	}
+	
+	/* board report form*/
+	.reportUl{
+		padding-left : 0px;
+	}
+	
+	.reportTitle{
+		display : block;
+		padding-top : 1rem;
+	}
+	
+	.reportContent{
+		width : 100%;
+		height : 18rem;
+		font-size : 2rem;
+	}
+	
+	.reportUl>li>input{
+		font-size: 20px;
+	}
+	
+	.reportUl>li>input ::placeholder{
+		font-size: 30px;
+	}
+	
+	#report-btn{
+		width : 10rem;
+		height : 4rem;
+		font-size : 1.5rem;
+		background-color : #6e6e6e;
+	}
+	
+	/*서일 소식*/
+	
+	.story-box:after {
+	  content: "";
+	  display: block;
+	  clear: both;
+	}
+	
+	.story-item {
+	  float: left;
+	  width: 800px;
+	  height: 200px;
+	  margin-left: 15px;
+	  margin-right: 15px;
+	  color: white;
+	}
+	
+	.prev {
+	  width: 19px;
+	  height: 100%;
+	  position: absolute;
+	  top: 50%;
+	  left: 0;
+	  -webkit-transform: translate(32px, -50%);
+	  -ms-transform: translate(32px, -50%);
+	  -o-transform: translate(32px, -50%);
+	  transform: translate(32px, -50%);
+	  background-color: #aaa;
+	}
+	
+	.next {
+	  width: 19px;
+	  height: 100%;
+	  position: absolute;
+	  top: 50%;
+	  right: 0;
+	  -webkit-transform: translate(-16px, -50%);
+	  -ms-transform: translate(-16px, -50%);
+	  -o-transform: translate(-16px, -50%);
+	  transform: translate(-16px, -50%);
+	  background-color: #aaa;
+	}
+	
+	/*footer*/
+	
+	.page-container{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+    	justify-content: center;
+	}
+	
+	.img-footer{
+		display: inline;
+	    vertical-align: middle;
+	    width: 10rem;
+	    height: 6rem;
+	    margin : 0 1rem 0 1rem;
+	}
+	
+	.container{
+	   text-align : center;
+	}
+	
+	.p-footer{
+		display: inline;
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 1rem;
+	    padding-top: 10px;
+	}
+}
+
+
+
+@media screen and (max-width:767px) {
+	.user-wrap {
+	    min-width: 546px;
+		width: 100%;
+	    position: relative;
+	    margin: 0 auto;
+		padding-left: 5%;
+	    padding-right: 5%;
+	}
+	
+	.wrap{
+		position: relative;
+		margin: 0 auto;
+		width: 100%;
+	}
+	
+	.body-content{
+		width: 100%;
+	}
+	
+	a{
+		text-decoration: none;
+	}
+	
+	ul {
+		list-style:none;
+	}
+	
+	div.inner-content{
+		width: 100%;
+	    margin-bottom: 5% !important;
+	    margin: 0px auto;
+	    position: relative;
+	    display: flex;
+	    flex-direction: column;
+	}
+	
+	
+	div.wrap-news{
+		width: 100%;
+	    display: inline-flex;
+	    min-width: auto;
+	    flex-direction: column;
+	    float: left;
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-weight: var(--wgt300, 300);
+	    line-height: 1.8;
+	    color: #000;
+	    text-align: justify;
+	    word-break: normal;
+	    word-wrap: break-word;
+	    border-bottom: 1px solid #ddd;
+	    margin-bottom: 30px;
+	}
+	
+	
+	div.wrap-bottom{
+		margin-top: 20px;
+	}
+	
+	.div-inner{
+		float : left;
+		width : 100%;
+		height: 100%;
+		margin-bottom: 20px;
+	}
+
+	section{
+		width: 100%;
+	}
+	
+	.empty-part{
+		height: 40px;
+	}
+	
+	.main {
+		width: 100%;
+	    height: 750px;
+	    position: relative;
+	    flex-direction: row;
+	    margin-bottom: 30px;
+	    border: 1px solid #ddd;
+	}
+	
+	.main .newstext-main{
+		padding: 20px 20px 0px 20px;
+	    height: 200px;
+	    width: 100%;
+	    text-align: justify;
+	    word-break: normal;
+	    word-wrap: break-word;
+	}
+	
+	.main .newstext-main p{
+		padding-top: 10px;
+	    width: 100%;
+	    display: -webkit-box;
+	    max-height: 100px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	.newstext-main h2 a, .newstext h4 a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.newstext-main h2{
+		font-size: 30px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.newstext-main p a{
+		text-decoration: none;
+		color: #808080;
+		font-size: 22px;
+		width: 100%;
+	}
+	
+	.newstext p a{
+		text-decoration: none;
+		color: #808080;
+		font-size: 18px;
+	}
+	
+	.main .pic{
+		width: 100%;
+		height: 550px;
+	}
+	
+	.main .pic img{
+		object-fit: contain;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.newscategory {
+		display: inline-block;
+		flex-direction: column;
+		width: 100%;
+		height: 20%;
+		margin-bottom: 30px;
+	}
+	
+	.newscategory-bottom{
+		display: inline-block;
+		flex-direction: column;
+		width: 100%;
+		height: 25%;
+		margin-bottom: 50px;
+	}
+	
+	.sub {
+		width: 100%;
+		height: 120px;
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		padding: 10px 0px;
+	}
+	
+	.sub>.pic {
+		width: 150px;
+		height: 100%;
+	}
+	
+	
+	.sub .pic img{
+		object-fit: contain;
+		width: 100%;
+		height: 120px;
+	}
+	
+	.sub .newstext{
+		vertical-align: center;
+		margin-left: 10px;
+		padding: 0px;
+		margin-top: 5px;
+	}
+	
+	.sub .newstext h4{
+		font-size: 20px;
+		text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	.sub .newstext p{
+		margin-bottom: 0px;
+		display: -webkit-box;
+	    min-height: 50px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	/*기사 내부 페이지 carousel*/
+	.another-article{
+		height: 400px;
+		padding-top: 100px;
+		width: 100%;
+	}
+	
+	.another-article>.carousel-inner{
+		height: 100%;
+		width: 100%;
+	}
+	
+	.carousel-area{
+		width: 100%;
+		height: 100%;
+		display: flex;
+	    justify-content: space-evenly;
+	}
+	
+	.carousel-area>a{
+		width: 30%;
+		height: 100%;
+	}
+	
+	.story-img{
+		width: 100%;
+		height: 100%;
+	}
+	
+	
+	/*광고*/
+	.carousel-inner{
+		object-fit: contain;
+		width: 100%;
+		height: 300px;
+	}
+	
+	.carousel-item{
+		height: 100% !important;
+	}
+	
+	.carousel-item>a>img{
+		width: 100%;
+		height: 300px;
+		object-fit: contain;
+	}
+
+	/*페이지 처리*/
+	.pagination{
+		justify-content : center; 
+		font-weight: bold;
+		position: relative;
+	}
+	
+	.page-link{
+		width:40px;
+		height: 40px !important; 
+		color: #000040 !important; 
+		font-size: 11px;
+		font-weight: bold;
+		text-align: center !important;
+		line-height: 40px !important;
+		border: 1px solid #c0c0c0!important;
+	}
+	
+	/**/
+	.article-content-header{
+		border-bottom: 1px solid #ddd;
+		margin-bottom : 4rem;
+	}
+	
+	.article-information {
+	    padding-left : 0;
+	}
+	
+	
+	.article-information >li {
+	    display: inline-block;
+	    
+	}
+	
+	.article-information >li::after {
+	    content: '|';
+	    position: relative;
+	    top: -2px;
+	    margin: 0 0.625rem;
+	    font-size: .8em;
+	    color: #cacaca;
+	}
+	
+	span.marker{
+	   display: inline;
+	   box-shadow: inset 0 -10px 0 #ffff00; 
+	}
+	
+	blockquote{
+		border-left: 0.3rem solid #aeaeae;
+		padding-left : 1rem;
+		padding-top : 1rem;
+		padding-bottom : 1rem;
+		margin: 1rem 0 1rem !important;
+	}
+	
+	.info-group{
+	   margin-top : 1.5rem;
+	}
+	
+	h4.news-subTitle {
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 2rem;
+	    margin: 1rem 0;
+	    line-height: 1;
+	    letter-spacing: 0.02em;
+	    color: #8e8f95;
+	}
+	
+	i.fa-solid>span{
+	   font-family : 'Noto Sans KR', sans-serif;
+	   font-size: 1.2rem;
+	    font-weight: 300;
+	    font-style: normal;
+	    line-height: 1.125;
+	    color: #707070;
+	    vertical-align: middle;
+	    letter-spacing: 0.04em;
+	}
+	
+	h3.news-title {
+		font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 4rem;
+	    margin: 1.5rem 0;
+	    font-weight: 700;
+	}
+	
+	#article-view-content-body img{
+		margin : 2rem 0 1rem;
+		max-width : 100% !important;
+	}
+	
+	#article-view-content-body {
+		margin: 0 0 1em;
+	    font-weight: 300;
+	    line-height: 1.8;
+	    color: #000;
+	    text-align: left;
+	    word-break: normal;
+	    word-wrap: break-word;
+	    font-size : 1.8rem;
+	}
+	
+	figcaption{
+	   padding: 0 0.625rem;
+	    margin-top: 0.75rem;
+	    font-size: 1.3rem;
+	    font-weight: 400;
+	    line-height: 1.625;
+	    color: #777;
+	}
+	
+	h4.news-category {
+	    font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 1.5rem;
+	    font-weight: 500;
+	    margin: 1.5rem 0;
+	    line-height: 1;
+	    letter-spacing: 0.02em;
+	    color: #8e8f95;
+	}
+	
+	.wrap-news-article{
+		margin-right: 0px;
+	}
+	
+	.wrap-section{
+		width: 100%;
+		margin: 0px;
+	}
+	
+	/*satirical*/
+	.satirical-area>h2{
+		font-size: 30px;
+		font-weight: bold;	
+		margin-top: 15px;
+		margin-bottom: 10px;
+	}
+	
+	.satirical-area{
+		width: 100%;
+	}
+	
+	.now-area{
+		display: flex;
+		flex-wrap: wrap;
+		height: 48%;
+		justify-content: center;
+	}
+	
+	.merge-satirical{
+		margin: 2%;
+		border: 2px solid #ddd;
+		padding: 10px;
+		width: 45%;
+		height: 46%;
+	}
+	
+	.each-area{
+		object-fit: contain;
+		width: 100%;
+		height: 90%;
+		border: 1px solid #ddd;
+	}
+	
+	.satirical-area>form>input{
+		width: 100px;
+		height: 50px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	
+	.satirical-before{
+		display: flex;
+		width: 100%;
+		height: 2%;
+		margin-top: 15px;
+		margin-bottom: 10px;
+		flex-direction: row;
+	    justify-content: space-between;
+	}
+	
+	.satirical-before>h2{
+		font-size: 30px;
+		font-weight: bold;	
+		float: left;
+	}
+	
+	.satirical-inner:hover{
+		border-bottom: 4px solid #c0c0c0;
+	}
+	
+	.satirical-inner{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		margin-right: 25px;
+	}
+	
+	.satirical-inner>a{
+		display: flex;
+		text-decoration: none !important;
+	}
+	
+	.satirical-inner>a>p{
+		display:grid;
+		align-items:center;
+		font-size: 14px;
+		font-weight: bold;
+		padding-right: 8px;
+		margin: 0 !important;
+		color: black !important;
+	}
+	
+	.satirical-inner>a>.plus-btn{
+		display:grid;
+		align-items:center;
+		color: black !important;
+		font-size: 35px;
+		font-weight: bold;	
+	}
+	
+	/*boardList*/
+	.list-inner-content{
+		width: 100%;
+		margin: 0px auto;
+		margin-bottom: 30px;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.merge-list{
+		width: 100%;
+		height: 150px;
+		border-top: 2px solid #c0c0c0;
+		align-content: center;
+		flex-wrap: wrap;
+		position: relative;
+	}
+	
+	.list{
+		width: 100%;
+		height: 100%;
+		padding: 5px 0px;
+		display: inline-flex;
+		flex-direction: row;
+	}
+	
+	.list-pic{
+		height: 100%;
+	    width: 20%;
+	    max-width: 160px;
+	    min-width: 160px;
+	    object-fit: scale-down;
+	    padding-right: 10px;
+	    padding-left: 5px;
+	}
+	
+	.list-pic>a>img{
+		width: 100%;
+		height: 100%;
+		object-fit: scale-down;
+	}
+	
+	.list-content{
+		width: 100%;
+	    padding-right: 5px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	
+	.article-title{
+		width: 100%;
+	    font-size: 22px;
+	    font-weight: bold;
+	    padding-bottom: 5px;
+	    text-overflow: ellipsis;
+	    white-space: nowrap;
+	    overflow: hidden;
+	}
+	
+	.article-title>a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.list-preview-content{
+		font-size: 18px;
+	    text-align: left;
+	    display: -webkit-box;
+	    min-height: 50px;
+	    -webkit-line-clamp: 2;
+	    -webkit-box-orient: vertical;
+	    text-overflow: ellipsis;
+	    white-space: normal;
+	    overflow: hidden;
+	    word-break: break-all;
+	}
+	
+	.list-preview-content>a{
+		text-decoration: none;
+		color: black;
+		
+	}
+	
+	.list-date{
+		padding-top: 10px;
+		font-size: 16px;
+	}
+	
+	.list-date>a{
+		text-decoration: none;
+		color: black;
+	}
+	
+	.only-satirical{
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    width: 100%;
+	}
+	
+	.each-satirical{
+		margin: 2%;
+	    border: 2px solid #ddd;
+	    padding: 10px;
+	    width: 45%;
+	    height: 430px;
+	}
+	
+	/*pdf*/
+	.panel-body{
+		width: 100%;
+    	margin-bottom: 30px;
+	}
+	
+	.pdf{
+		margin-bottom: 15px;
+	}
+	
+	.panel-body>h2{
+		font-size: 32px !important;
+		font-weight: bold;
+		margin-bottom: 20px;
+		padding-left: 20px;
+	}
+	
+	.pdf-list{
+		border: 2px solid #ddd;
+		height: 100px;
+		padding: 25px 0px 25px 40px;
+	}
+	
+	.pdf-list>a{
+		font-size: 28px;
+		text-decoration: none;
+		color: black;
+	}
+	
+	.pdf-list>a>i{
+		padding-right: 15px;
+	}
+	
+	.empty{
+		height: 20px;	
+	}
+	
+	/* board report form*/
+	.reportUl{
+		padding-left : 0px;
+	}
+	
+	.reportTitle{
+		display : block;
+		padding-top : 1rem;
+	}
+	
+	.reportContent{
+		width : 100%;
+		height : 18rem;
+		font-size : 2rem;
+	}
+	
+	.reportUl>li>input{
+		font-size: 20px;
+	}
+	
+	.reportUl>li>input ::placeholder{
+		font-size: 30px;
+	}
+	
+	#report-btn{
+		width : 10rem;
+		height : 4rem;
+		font-size : 1.5rem;
+		background-color : #6e6e6e;
+	}
+	
+	/*서일 소식*/
+	
+	.story-box:after {
+	  content: "";
+	  display: block;
+	  clear: both;
+	}
+	
+	/*footer*/
+	
+	.img-footer{
+		display: inline;
+	    vertical-align: middle;
+	    width: 10rem;
+	    height: 6rem;
+	    margin : 0 1rem 0 1rem;
+	}
+	
+	.container{
+	   text-align : center;
+	}
+	
+	.p-footer{
+		display: inline;
+		font-family: 'Noto Sans KR', sans-serif;
+	    font-size: 1rem;
+	    vertical-align: middle;
+	    margin: 1rem 0;
+	    line-height: 1;
+	    letter-spacing: 0.02em;
+	    color: #8e8f95;
+	}
+}
+

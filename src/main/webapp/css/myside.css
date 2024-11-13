@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+*{
+	margin: 0px;
+	padding:0px;
+	box-sizing: border-box;
+	font: "arial";
+}
+
+.menu-icon{
+	display: none;
+}
+
+nav{
+	width: 18%;
+	height: 100%;
+	min-width: 50px;
+	position: fixed;
+	background: #808080;
+	z-index: 800;
+}
+
+nav>ul {
+	padding-left: 0px !important;
+	list-style: none;
+	position: relative;
+	text-align: center;
+	
+}
+
+.menu {
+  width: 100%;
+  overflow: hidden;
+}
+
+.menu > li {
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.submenu > li {
+  line-height: 30px;
+}
+
+.submenu {
+	height: 0px; /*ul의 높이를 안보이게 처리*/
+	padding: 0px !important;
+	overflow: hidden;
+}
+
+.menu > li:hover {
+	transition-duration: 0.5s;
+	background-color: #b1ccf3;
+}
+
+.menu > a:hover {
+	background-color: #b1ccf3;
+}
+
+
+.menu > li:hover .submenu {
+	width: 100%;
+	height: 230px; /*서브메뉴 li한개의 높이 30*5*/
+	transition-duration: 1s;
+}
+
+.menu li {
+	padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
+    flex-direction: column;
+}
+
+.dropdown{
+	width: 100%;
+} 
+
+
+.menu li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+	padding: 0 20px;
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+}
+
+.menu>ul{
+	display: none;
+	position: absolute;
+	margin-left: 5px;
+}
+
+.menu li button {
+	color: white;
+}
+
+.myShow{
+	width: 100% !important;
+}
+
+.dropdown-menu>li {
+	text-align: center;
+	background: white;
+	width: 100%;
+	height: 80px;
+}
+
+.menu button{
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+/* 타블렛 */
+@media screen and (max-width:1023px) {
+	nav{
+		display: none;
+	}
+}
+/*
+@media screen and (max-width:1023px) {
+	nav{
+		width: 100%;
+		min-width: 1000px;
+		display: flex;
+		flex-direction: column;
+		background-color:transparent;
+	}
+	
+	.menu {
+	  width: 100%;
+	  overflow: hidden;
+	  display: flex;
+	  flex-direction: column;
+	}
+	
+	.menu > li {
+	  width: 100%;
+	  text-align: center;
+	  line-height: 40px;
+	  background-color: #808080;
+	}
+	
+	.menu li a{
+		width: 100%;
+		height: 50px;
+		display: block;
+		padding: 0 20px;
+		font-size: 22px;
+		color: black;
+		font-weight: bold;
+	    text-align: center;
+	    line-height: 55px;
+	    text-decoration: none;
+	}
+		
+	.submenu > li {
+	  line-height: 50px;
+	  background-color: #94a9ff;
+	}
+	
+	.submenu {
+	  height: 0px;
+	  overflow: hidden;
+	}
+	
+	.menu > li:hover {
+	  background-color: #94a9ff;
+	  transition-duration: 0.5s;
+	}
+	
+	.menu > li:hover .submenu {
+	  height: 230px;
+	  transition-duration: 1s;
+	}
+
+			
+}*/
+
